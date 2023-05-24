@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply text-6xl font-bold bg-rose-500 bg-gradient-to-r from-slate-600 to-rose-600 text-transparent bg-clip-text mb-4;
+}
+
+h2 {
+  @apply text-4xl font-semibold mb-4 text-rose-500;
+}
+
+h3 {
+  @apply text-3xl font-medium mb-4;
+}
+
+h4 {
+  @apply text-2xl font-medium mb-4;
+}
+
+h5 {
+  @apply text-xl font-medium mb-4;
+}
+
+img {
+  @apply inline-block;
+}
+
+p {
+  @apply text-xl mb-4;
+}
+
+a {
+  @apply text-rose-500 hover:border-b-2 hover:border-solid hover:border-rose-500;
+}
+
+ul,
+ol {
+  @apply text-xl;
+}
+
+ul {
+  @apply list-disc marker:text-rose-500 pl-5;
+}
+
+ol {
+  @apply list-decimal marker:text-rose-500 pl-5;
+}
+
+ul li,
+ol li {
+  @apply mb-2;
+}
+
+table {
+  @apply table-fixed border-collapse w-full border border-slate-200 bg-white text-sm shadow-sm mb-4;
+}
+
+thead {
+  @apply bg-slate-100;
+}
+
+th {
+  @apply border border-slate-200 font-semibold p-4;
+}
+
+td {
+  @apply border border-slate-200 p-4;
+}
+
+button {
+  @apply px-6 py-4 border border-solid font-semibold text-white bg-rose-500 rounded-md shadow-sm hover:bg-white hover:text-rose-500 hover:border-rose-500;
+}
+
+form {
+  @apply bg-slate-100 p-5 rounded-md border border-slate-200;
+}
+
+form > div {
+  @apply mb-4;
+}
+
+form input,
+form textarea {
+  @apply block p-3 text-base font-normal bg-white appearance-none border-slate-200 border border-solid w-full rounded-md outline-none focus:border-rose-500;
+}
+
+form button {
+  @apply w-full;
+}
+
+.reveal .progress,
+.reveal .controls {
+  @apply text-rose-500;
+}
